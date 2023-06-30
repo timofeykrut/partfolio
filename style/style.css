@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Black.ttf") format('truetype');
+    font-style: normal;
+    font-weight: Black;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Thin.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Roboto, Arial, sans-serif;
+
+    background-image: url(https://kartinkin.net/uploads/posts/2021-07/1627175104_6-kartinkin-com-p-matritsa-sinii-fon-krasivo-7.jpg);
+    background-position: center;
+    background-attachment: fixed;
+
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color:blue;
+    background-image: url(https://thumbs.dreamstime.com/z/%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F-%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D0%B8%D0%BD%D1%8F%D1%8F-%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D1%81%D1%82%D0%B8%D0%BB%D1%8F-%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA-211410603.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header .container {
+    align-items: center;
+    height: 100%;
+}
+
+header .logo {
+    height: 120px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flip-logo 6s ease-in-out infinite;
+}
+@keyframes flip-logo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    40% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+main {
+    width: 930px;
+    min-height: calc(100vh - 300px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div {
+    box-sizing: border-box;
+    font-size: 32px;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+}
+
+main h2 {
+    width: 100%;
+}
+
+main .work-case {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main .work-case span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: 20px;;
+    width: 100%;
+    padding: 6px;
+    background-color:blue;
+
+    transition: background-color .6s ease-in-out;
+}
+
+main .work-case:hover span {
+    background-color: black;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    width: 270px;
+    height: 300px;
+    background-color:blue;
+}
+
+aside div {
+    display: block;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 20px 24px 12px;
+    font-size: 30px;
+    font-weight: 700; 
+}
+
+aside a {
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px;
+    margin: 6px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px 6px 6px 0;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+
+@media (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+
+}
+div {
+    
+}
